@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Welcome</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style type="text/css">
+body {
+  background-color: black;
+  color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body.dark-mode {
+  background-color:white;
+  color: black;
+}
+div{
+  text-align: center;
+}
+#pad{
+    padding: 90px;
+}
+#i{
+  opacity:0.6;
+}
+</style>
+</head>
+<body>
+
+<div><h1> Welcome </h1></div>
+<div class="row">
+  <div class="col">
+<div id="pad" class="icon-color" ><p> Dark / light mode</p><i onclick="myFunction();myIcon(this)" class="bi bi-brightness-high-fill"></i></div>
+<div>Enter your full name in <span class="font-weight-bold">"CAPITAL LETTER"</span> to predict your caste<br><br><input id="myText" placeholder="ROHAN KUMAR"></input>
+<button onclick="myname();myclick();" id="show"><i class="bi bi-search"></i></button></div>
+<p id="i"> example:: <br> ROHAN KUMAR <br> his cast is tali</p>
+</div>
+
+<div class="col">
+
+
+<div class="p-5"><h1 id="demo"></h1><h1 id="myDIV" style="display:none;">is very big stupid and बैल
+<br><span class="p-3" ><img src="https://149366112.v2.pressablecdn.com/wp-content/uploads/2019/08/shutterstock_590051840.jpg" alt="bail"  height="250"></span></h1><div></div></div>
+<script>
+function myname() {
+  var x = document.getElementById("myText").value;
+  document.getElementById("demo").innerHTML = x;
+}
+function myclick() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  }
+}
+
+    var element = document.body;
+function myFunction() {
+  element.classList.toggle("dark-mode");
+ }
+ function myIcon(x) {
+   x.classList.toggle("bi-moon");
+ }
+
+</script>
+</body>
+</html>
